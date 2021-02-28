@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="res/img/favicon.png">
+  <title>UPT Puskesmas Griya Antapani</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="res/css/style.css">
+</head>
+
+<!-- Halaman utama website -->
+
+<body>
+  <header class="container-fluid">
+    <a href="index.html" class="logo"></a>
+    <nav id="navbar">
+      <span id="close" class="visible-xs-block visible-sm-block">
+        <i class="fas fa-times fa-fw"></i>
+      </span>
+      <div class="logo-mobile visible-xs-block visible-sm-block">
+        <span>UPT Puskesmas<br>Griya Antapani</span>
+      </div>
+      <ul>
+        <li><a href="petunjuk.html">
+            <i class="fas fa-book fa-fw"></i> Petunjuk Penggunaan
+          </a></li>
+        <li><a href="kontak.html">
+            <i class="fas fa-phone fa-fw"></i> Hubungi Kami
+          </a></li>
+        <li><a href="masuk.html" class="btn btn-success btn-lg">
+            <i class="fas fa-sign-in-alt fa-fw"></i> Masuk
+          </a></li>
+      </ul>
+    </nav>
+    <div class="toggle visible-xs-block visible-sm-block">
+      <input type="checkbox" id="toggle-navbar">
+      <i class="fas fa-bars fa-fw"></i>
+    </div>
+  </header>
+
+  <div class="container-fluid welcome">
+    <div class="row no-gap">
+      <div class="col-md-8 col-lg-9 hidden-xs hidden-sm">
+        <div class="gambar">
+          <span>Selamat datang di website<br>UPT Puskesmas Griya Antapani</span>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="antrian">
+          Antrian saat ini :
+          <span>32</span>
+        </div>
+        <a href="antrian.html" class="btn btn-primary ambil-antrian"
+          onclick="return confirm('Anda yakin ingin mengambil nomor antrian?');">
+          Klik di sini untuk mengambil nomor antrian</a>
+        <hr class="hidden-md hidden-lg">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">Instagram</h2>
+        <div id="instagram-feed"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row no-gap">
+        <div class="col-md-6">
+          <p><strong>UPT Puskesmas Griya Antapani</strong></p>
+          <p>Jl. Plered Raya no. 02, Antapani Tengah, Kota Bandung</p>
+          <p>Jam kerja pukul 08:00 s.d 14:30 WIB</p>
+          <p><span>Telepon</span> : <a href="tel:0227232881">(022) 7232881</a></p>
+          <p><span>E-mail</span> : <a href="mailto:uptgriyaantapani@gmail.com"
+              target="_blank">uptgriyaantapani@gmail.com</a></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/6281221902846" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp fa-fw"></i>
+  </a>
+
+  <script src="https://kit.fontawesome.com/95849a279d.js"></script>
+  <script src="res/js/InstagramFeed.min.js"></script>
+  <script src="res/js/script.js"></script>
+</body>
+
+</html>

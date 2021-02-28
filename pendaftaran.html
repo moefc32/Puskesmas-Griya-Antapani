@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="res/img/favicon.png">
+  <title>Pendaftaran Baru | UPT Puskesmas Griya Antapani</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="res/css/style.css">
+</head>
+
+<!-- Halaman pendaftaran pasien baru -->
+
+<body>
+  <header class="container-fluid">
+    <a href="index.html" class="logo"></a>
+    <nav id="navbar">
+      <span id="close" class="visible-xs-block visible-sm-block">
+        <i class="fas fa-times fa-fw"></i>
+      </span>
+      <div class="logo-mobile visible-xs-block visible-sm-block">
+        <span>UPT Puskesmas<br>Griya Antapani</span>
+      </div>
+      <ul>
+        <li><a href="petunjuk.html">
+            <i class="fas fa-book fa-fw"></i> Petunjuk Penggunaan
+          </a></li>
+        <li><a href="kontak.html">
+            <i class="fas fa-phone fa-fw"></i> Hubungi Kami
+          </a></li>
+        <li><a href="masuk.html" class="btn btn-success btn-lg">
+            <i class="fas fa-sign-in-alt fa-fw"></i> Masuk
+          </a></li>
+      </ul>
+    </nav>
+    <div class="toggle visible-xs-block visible-sm-block">
+      <input type="checkbox" id="toggle-navbar">
+      <i class="fas fa-bars fa-fw"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Pendaftaran</h1>
+    <p class="text-center">Silakan isi form berikut untuk melakukan pendaftaran pasien baru :</p>
+    <form class="row pendaftaran">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label>Nama lengkap</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-user fa-fw"></i></span>
+            <input type="email" class="form-control" placeholder="Silakan ketik nama lengkap Anda">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Jenis kelamin</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-male fa-fw"></i></span>
+            <select class="form-control">
+              <option selected disabled>Silakan pilih jenis kelamin Anda</option>
+              <option>Laki-laki</option>
+              <option>Perempuan</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tanggal lahir</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-calendar fa-fw"></i></span>
+            <input type="date" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Nomor telepon</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-phone fa-fw"></i></span>
+            <input type="tel" class="form-control" placeholder="Silakan ketik nomor telepon Anda">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Alamat domisili</label>
+          <textarea class="form-control" rows="3" placeholder="Silakan ketik alamat domisili Anda"></textarea>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label>Alamat e-mail</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-envelope fa-fw"></i></span>
+            <input type="email" class="form-control" placeholder="Silakan ketik alamat e-mail Anda">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-key fa-fw"></i></span>
+            <input type="password" class="form-control" placeholder="Silakan ketik password Anda">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Ketik ulang password</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fas fa-key fa-fw"></i></span>
+            <input type="password" class="form-control" placeholder="Silakan ketik ulang password Anda">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Foto KTP</label>
+          <div class="media">
+            <div class="media-left">
+              <img id="preview" src="">
+            </div>
+            <div class="media-body">
+              <small class="note">*Foto KTP harus jelas terbaca, berekstensi .jpg, .jpeg, atau .png, dan tidak lebih
+                besar
+                dari 2 MB</small>
+              <input type="file" id="ktp" accept=".jpg, .jpeg, .png" onchange="loadFile(event);"
+                title="Lampiran gambar">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 text-center">
+        <a href="index.html" class="btn btn-success btn-lg submit">
+          <i class="fas fa-pencil-alt fa-fw"></i> Daftar
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row no-gap">
+        <div class="col-md-6">
+          <p><strong>UPT Puskesmas Griya Antapani</strong></p>
+          <p>Jl. Plered Raya no. 02, Antapani Tengah, Kota Bandung</p>
+          <p>Jam kerja pukul 08:00 s.d 14:30 WIB</p>
+          <p><span>Telepon</span> : <a href="tel:0227232881">(022) 7232881</a></p>
+          <p><span>E-mail</span> : <a href="mailto:uptgriyaantapani@gmail.com"
+              target="_blank">uptgriyaantapani@gmail.com</a></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/6281221902846" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp fa-fw"></i>
+  </a>
+
+  <script src="https://kit.fontawesome.com/95849a279d.js"></script>
+  <script src="res/js/script.js"></script>
+</body>
+
+</html>
