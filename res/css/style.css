@@ -447,10 +447,6 @@ footer .logo {
     padding: 10px 30px !important;
   }
 
-  header .logo::after {
-    content: "UPT Puskesmas Griya Antapani";
-  }
-
   header #close {
     padding: 0 30px;
   }
@@ -487,6 +483,10 @@ footer .logo {
 @media (min-width: 992px) {
   header a {
     color: #424242;
+  }
+
+  header .logo::after {
+    content: "UPT Puskesmas Griya Antapani";
   }
 
   header #navbar {
