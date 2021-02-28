@@ -61,12 +61,18 @@ textarea {
 }
 
 .btn {
-  margin-right: 5px;
   font-size: inherit !important;
   font-weight: initial;
   vertical-align: initial;
   border-radius: 100px;
   white-space: normal;
+}
+
+.input-group-btn .btn {
+  font-size: 14px !important;
+  vertical-align: initial;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 /* Main content */
@@ -329,6 +335,20 @@ header #toggle-navbar {
   margin: 15px auto 0;
 }
 
+.tindakan {
+  margin-bottom: 50px;
+}
+
+.tindakan>div {
+  margin-bottom: 0;
+}
+
+.tindakan a.submit {
+  display: block;
+  width: 75%;
+  margin: 15px auto 0;
+}
+
 .pembayaran .row>div {
   margin-bottom: 15px;
 }
@@ -427,6 +447,12 @@ footer a i {
     width: auto;
     min-width: 50%;
   }
+
+  .tindakan a.submit {
+    display: inline-block;
+    width: auto;
+    min-width: 50%;
+  }
 }
 
 /* desktop screen view */
@@ -498,6 +524,10 @@ footer a i {
     min-width: 33%;
   }
 
+  .tindakan a.submit {
+    min-width: 33%;
+  }
+
   .kontak h1 {
     text-align: initial;
   }
@@ -525,6 +555,10 @@ footer a i {
   }
 
   .akun a.submit {
+    min-width: 25%;
+  }
+
+  .tindakan a.submit {
     min-width: 25%;
   }
 }
