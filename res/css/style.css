@@ -315,6 +315,29 @@ header #toggle-navbar {
   margin: 15px auto 0;
 }
 
+.akun {
+  margin-bottom: 50px;
+}
+
+.akun>div {
+  margin-bottom: 0;
+}
+
+.akun a.submit {
+  display: block;
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.pembayaran .row>div {
+  margin-bottom: 15px;
+}
+
+.pembayaran span {
+  display: inline-block;
+  width: 120px;
+}
+
 .kontak p {
   text-align: center;
 }
@@ -398,6 +421,12 @@ footer a i {
     width: auto;
     min-width: 50%;
   }
+
+  .akun a.submit {
+    display: inline-block;
+    width: auto;
+    min-width: 50%;
+  }
 }
 
 /* desktop screen view */
@@ -465,6 +494,10 @@ footer a i {
     min-width: 33%;
   }
 
+  .akun a.submit {
+    min-width: 33%;
+  }
+
   .kontak h1 {
     text-align: initial;
   }
@@ -488,6 +521,10 @@ footer a i {
   }
 
   .pendaftaran a.submit {
+    min-width: 25%;
+  }
+
+  .akun a.submit {
     min-width: 25%;
   }
 }
