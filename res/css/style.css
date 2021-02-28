@@ -80,6 +80,10 @@ textarea {
   white-space: nowrap;
 }
 
+.media-left img {
+  margin: 0;
+}
+
 /* Main content */
 
 header {
@@ -312,6 +316,7 @@ header #toggle-navbar {
   display: block;
   float: left;
   width: 100px;
+  height: 100px;
   margin-right: 15px;
   padding: 0;
   background: #bdbdbd;
